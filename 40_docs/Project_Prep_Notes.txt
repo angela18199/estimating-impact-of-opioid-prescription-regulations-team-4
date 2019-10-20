@@ -1,0 +1,57 @@
+Preparation for python project
+
+1. Variables we need
+	County Name
+	County FIPS
+	County Population
+	County Opioid OD Deaths
+	Opioid Deaths Per Capita (Calculation)
+	State
+	Year Of Observations
+	Year When Opioid Law Changes made
+
+2. What samples need to be covered
+	States of Washington, Florida, and Texas
+	Other states also need to be examined that did not change opioid laws (maybe ones of a similar size or similar geographic location, to
+	ensure reduction in other variables. I would recommend Oregon, California, and Georgia, though if we can more could work. Also, need
+	to check opioid laws in these states. That may require outside information.
+	
+	All counties in at least these six states.
+
+	Opioid laws are between 2007 and 2011. Therefore, our years should bracket these years. I would recommend at least three years before 2007
+	and three years after 2011. Seems we have only 2006 and 2012 though
+	(I do not know what is standard in this field, maybe ask Nick how many years would make it signficificant. 
+	Could go up to 5 if we have the data)
+
+3. Single row of data
+	County State,
+	County Name,
+	County FIPS,
+	County Opioid Deaths Per Capita,
+	Year Of Observations,
+	Year When Law Changed,
+	County Opioid Deaths,
+	County Population,
+
+4. What do I need to do to get this dataset?
+
+	Combine County population, state, county name, county FIPS code, law change, and observations into a single table. Calculate deaths per capita
+
+5. Source and Intermediate Datasets
+	County_FIPS
+	pop_counties_2006_2012.csv
+	Need to find opioid death data and years of observations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
