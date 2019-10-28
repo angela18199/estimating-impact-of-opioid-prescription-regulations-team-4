@@ -37,10 +37,19 @@ print(death_2015.head())
 #check data type
 print(death_2015.Deaths.dtypes)
 #data type is object rather than float
-#change the data type into float
-death_2015.Deaths = death_2015.Deaths.astype(float)
+
+#error would occur when changing the data type into float -> check NA
+print(sum(death_2015.Deaths.isnull()))
+#there are 15 missing values in column Deaths
+
+#convert Deaths into float
+death_2015.Deaths = pd.to_numeric(death_2015.Deaths, errors = "coerce")
 print(death_2015.Deaths.dtypes)
 
 
 #delete the state name from County column and create another column to store the state name.
-#refer to this link http://blog.e-happy.com.tw/python-%E6%93%B7%E5%8F%96%E9%83%A8%E4%BB%BD%E7%9A%84%E5%AD%97%E4%B8%B2%EF%BC%9Aslicing/
+for d in df:
+    county_state = d["County"].str.split(", ", n=1, expand = True)
+    d["State"] = county_state[1]
+    d["County"] = county_state[0]
+    print(d.head(1))
