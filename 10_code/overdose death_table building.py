@@ -43,3 +43,4 @@ print(death_2015.Deaths.dtypes)
 
 
 #delete the state name from County column and create another column to store the state name.
+#refer to this link http://blog.e-happy.com.tw/python-%E6%93%B7%E5%8F%96%E9%83%A8%E4%BB%BD%E7%9A%84%E5%AD%97%E4%B8%B2%EF%BC%9Aslicing/
