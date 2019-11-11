@@ -98,7 +98,7 @@ for d in df:
     
 #merge all the dataframe into one table
 table = pd.concat(df)
-table = table.reset_index()
+table = table.reset_index(drop = True)
 print(table)
 
 table.to_csv(r'/Users/yu/Documents/Duke/courses/19fall/IDS690.02 python/mid-semester project/estimating-impact-of-opioid-prescription-regulations-team-4/20_intermediate_files/overdose_deaths.csv',header = True, index = None)
