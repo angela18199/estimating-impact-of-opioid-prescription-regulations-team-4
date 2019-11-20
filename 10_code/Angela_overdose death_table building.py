@@ -77,7 +77,7 @@ for d in df:
     #delete unnecessary columns
     d.drop(["Notes","County Code","Year Code","Drug/Alcohol Induced Cause"], axis = 1, inplace = True)
     #convert float into int
-
+    d.Year = d.Year.astype(int)
     ####check NA valuse first
     #d.Year = d.Year.astype("int")
     #d.Deaths = d.Deaths.astype("int")
